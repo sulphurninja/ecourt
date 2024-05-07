@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import Navbar from '@/components/Navbar'
 import { Register } from '@/components/register'
 import React from 'react'
 

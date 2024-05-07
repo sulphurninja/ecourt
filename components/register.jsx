@@ -24,21 +24,21 @@ export function Register() {
           </Link>
           <Link
             className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg p-6 flex flex-col items-center justify-center space-y-4 transition-colors"
-            href="#">
+            href="/lawyerregister">
             <BriefcaseIcon className="h-12 w-12 text-gray-600 dark:text-gray-400" />
             <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Lawyer</h3>
             <p className="text-gray-600 dark:text-gray-400 text-center">Register as a practicing lawyer.</p>
           </Link>
           <Link
             className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg p-6 flex flex-col items-center justify-center space-y-4 transition-colors"
-            href="#">
+            href="/labregister">
             <BuildingIcon className="h-12 w-12 text-gray-600 dark:text-gray-400" />
             <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Law Firm</h3>
             <p className="text-gray-600 dark:text-gray-400 text-center">Register as a law firm.</p>
           </Link>
           <Link
             className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg p-6 flex flex-col items-center justify-center space-y-4 transition-colors"
-            href="#">
+            href="/judgeregister">
             <GavelIcon className="h-12 w-12 text-gray-600 dark:text-gray-400" />
             <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Judge</h3>
             <p className="text-gray-600 dark:text-gray-400 text-center">Register as a judge or judicial officer.</p>

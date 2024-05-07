@@ -4,7 +4,7 @@ import Link from "next/link"
 export function Register() {
   return (
     (<section
-      className="flex items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
+      className="flex items-center justify-center lg:mt-0 mt-40 h-screen bg-gray-100 dark:bg-gray-900">
       <div
         className="max-w-3xl w-full px-6 py-12 bg-white rounded-lg shadow-lg dark:bg-gray-800">
         <div className="text-center space-y-4">
@@ -24,21 +24,21 @@ export function Register() {
           </Link>
           <Link
             className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg p-6 flex flex-col items-center justify-center space-y-4 transition-colors"
-            href="#">
+            href="/lawyerRegister">
             <BriefcaseIcon className="h-12 w-12 text-gray-600 dark:text-gray-400" />
             <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Lawyer</h3>
             <p className="text-gray-600 dark:text-gray-400 text-center">Register as a practicing lawyer.</p>
           </Link>
           <Link
             className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg p-6 flex flex-col items-center justify-center space-y-4 transition-colors"
-            href="#">
+            href="/forensicsRegister">
             <BuildingIcon className="h-12 w-12 text-gray-600 dark:text-gray-400" />
-            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Law Firm</h3>
-            <p className="text-gray-600 dark:text-gray-400 text-center">Register as a law firm.</p>
+            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Forensics</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-center">Register as forensics department.</p>
           </Link>
           <Link
             className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg p-6 flex flex-col items-center justify-center space-y-4 transition-colors"
-            href="#">
+            href="/judgeRegister">
             <GavelIcon className="h-12 w-12 text-gray-600 dark:text-gray-400" />
             <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Judge</h3>
             <p className="text-gray-600 dark:text-gray-400 text-center">Register as a judge or judicial officer.</p>

@@ -1,3 +1,5 @@
+import { ScaleIcon } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Navbar() {
@@ -5,7 +7,7 @@ export default function Navbar() {
     <header className="px-4 lg:px-6 h-14 flex items-center">
     <Link className="flex items-center justify-center" href="/">
       <ScaleIcon className="h-6 w-6" />
-      <span className="sr-only">eCourtroom</span>
+      <span className="ml-4 text-lg font-bold"></span>
     </Link>
     <nav className="ml-auto flex gap-4 sm:gap-6">
       <Link

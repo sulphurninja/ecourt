@@ -41,9 +41,11 @@ export function JudgeLogin() {
               </div>
               <Input id="password" placeholder="Enter your password" type="password" />
             </div>
+            <Link href='/judge'>
             <Button className="w-full" type="submit">
               Login
             </Button>
+            </Link>
           </CardContent>
         </Card>
       </div>

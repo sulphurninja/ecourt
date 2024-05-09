@@ -24,7 +24,7 @@ export function Register() {
           </Link>
           <Link
             className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg p-6 flex flex-col items-center justify-center space-y-4 transition-colors"
-            href="/lawyerRegister">
+            href="/lawyerregister">
  
             <BriefcaseIcon className="h-12 w-12 text-gray-600 dark:text-gray-400" />
             <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Lawyer</h3>

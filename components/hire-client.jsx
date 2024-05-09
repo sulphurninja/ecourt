@@ -11,7 +11,7 @@ import { Toaster } from './ui/sonner';
 export function HireClient() {
   const [lawyers, setLawyers] = useState([]);
   const [selectedLawyer, setSelectedLawyer] = useState(null); // State to store the selected lawyer
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState(auth?.user?.userName || "");
   const [userID, setuserID] = useState();
   const { state = {}, dispatch } = useContext(DataContext);
   const { auth = {} } = state;

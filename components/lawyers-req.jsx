@@ -8,7 +8,7 @@ export function LawyersReq() {
 
   const { state = {}, dispatch } = useContext(DataContext);
   const { auth = {} } = state;
-  const [userName, setUserName] = useState("")
+  const [userName, setUserName] = useState(auth?.user?.userName || "");
   const [userDetails, setuserDetails] = useState()
   const [requests, setRequests] = useState([]);
   const [userID, setUserID] = useState();
@@ -43,7 +43,7 @@ export function LawyersReq() {
   }
   useEffect(() => {
     fetchRequests();
-  }, [userID]);
+  }, []);
 
   const handleRequestAction = async (requestId, action) => {
     try {

@@ -5,10 +5,10 @@ import React from 'react'
 export default function hireLawyer() {
   return (
     <div className='flex'>
-        <Sidebar/>
-        <div className='flex-1'>
-<HireClient/>
-        </div>
+      <Sidebar />
+      <div className='flex-1 p-6'>
+        <HireClient />
+      </div>
     </div>
   )
 }

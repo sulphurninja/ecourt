@@ -5,6 +5,7 @@ import { useState } from "react"
 import { postData } from "@/utils/fetchData" // Import your postData function
 import { Toaster, toast } from "sonner" // Import toast for notifications
 import { useRouter } from "next/router"
+import Link from "next/link"
 
 export function Clientcomponent() {
   const initialState = { password: '', firstName: '', dob: '', lastName: '', userName: '' }
@@ -105,6 +106,9 @@ export function Clientcomponent() {
           Sign Up
         </Button>
       </form>
+      <p>Already an user? <Link href='/clients/login'>
+        <span className="text-blue-500"> Login</span>
+      </Link> </p>
     </div>
   );
 }

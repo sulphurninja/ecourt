@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "@/components/ui/dropdown-menu"
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
+import { EarIcon, Hammer, HammerIcon } from "lucide-react"
 
 export default function Sidebar() {
   return (
@@ -28,19 +29,24 @@ export default function Sidebar() {
               <FileTextIcon className="h-4 w-4" />
               <span>Check Status</span>
             </Link>
+          
             <Link
               className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-              href="/clients/uploaddocuments"
+              href="/clients/account"
             >
-              <UploadIcon className="h-4 w-4" />
-              <span>Upload Documents</span>
+              <UserIcon className="h-4 w-4" />
+              <span>View Account</span>
             </Link>
+           
+
+
           </nav>
+
         </div>
       </div>
-      
 
-    
+
+
     </div>
   )
 }

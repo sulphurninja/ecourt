@@ -15,15 +15,15 @@ export const DataProvider = ({ children }) => {
                 if (res.err) return localStorage.removeItem("firstLogin");
 
                 // Determine if the response contains user or vendor information
-                const isUser = res.user?.email;
-                const isVendor = res.vendor?.vendorEmail;
+                const isUser = res.user?.userName;
+                const isVendor = res.lawyer?.userName;
 
                 dispatch({
                     type: "AUTH",
                     payload: {
                         token: res.access_token,
                         // Include either user or vendor information based on the response
-                        authData: isUser ? res.user : isVendor ? res.vendor : null
+                        authData: isUser ? res.user : isVendor ? res.lawyer : null
                     }
                 });
             });

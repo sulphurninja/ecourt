@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { PopoverTrigger, PopoverContent, Popover } from "@/components/ui/popover"
 import { Calendar } from "@/components/ui/calendar"
 import { CardContent, CardFooter, Card } from "@/components/ui/card"
+import Link from "next/link"
 
 export function JudgeRegister() {
   return (
@@ -67,6 +68,12 @@ export function JudgeRegister() {
           </Button>
         </CardFooter>
       </Card>
+      <p>Already an user? 
+        <Link href='/judge/login'>
+        <span className="text-blue-500"> Login Now!</span>
+
+        </Link>
+        </p>
     </div>)
   );
 }

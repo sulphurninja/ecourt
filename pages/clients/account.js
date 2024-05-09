@@ -16,7 +16,7 @@ export default function Account() {
     const [userName, setUserName] = useState(auth?.user?.userName || "");
     const [userID, setuserID] = useState();
 
-    const [userDetails, setuserDetails] = useState();
+    const [userDetails, setuserDetails] = useState([]);
     const [userCases, setUserCases] = useState([]);
 
 
